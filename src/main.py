@@ -393,7 +393,9 @@ class SimplyStaticPostProcess:
 
 if __name__ == "__main__":
 
+    print ("==========================")
     print (os.environ.get("MYVAR"))
+    print ("==========================")
 
     try:
         params = json.loads(" ".join(sys.argv[1:]))
