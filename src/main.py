@@ -394,8 +394,9 @@ class SimplyStaticPostProcess:
 if __name__ == "__main__":
 
     print ("==========================")
-    print (os.getenv("MYVAR"))
-    print(os.environ.get('MYVAR'))
+    print (os.getenv("MY_VAR"))
+    
+    print(os.environ.get('MY_VAR'))
     print ("==========================")
 
     try:
