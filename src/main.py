@@ -393,6 +393,8 @@ class SimplyStaticPostProcess:
 
 if __name__ == "__main__":
 
+    print (os.environ.get("MYVAR"))
+
     try:
         params = json.loads(" ".join(sys.argv[1:]))
         helpers.log_to_console("DEBUG-GH", params)
