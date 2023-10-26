@@ -20,6 +20,7 @@ jobs:
         env:
          GITHUB_CONTEXT: ${{ toJson(github.event.client_payload) }}
          GITHUB_CONTEXT2: ${{ toJson(github.event.client_payload.archive_name) }}
+         MY_VAR: ${{ env.MY_VAR }}
         run: python src/main.py $GITHUB_CONTEXT
 
       - name: Deploy Website/Documents
