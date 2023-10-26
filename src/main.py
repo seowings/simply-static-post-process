@@ -37,8 +37,8 @@ import os
 if __name__ == "__main__":
 
     print ("==========================")
-    print (os.getenv("env.MY_VAR"))
+    print (os.getenv("MY_VAR"))
     
-    print(os.environ.get('env.MY_VAR'))
+    print(os.environ.get('MY_VAR'))
     print ("==========================")
 
