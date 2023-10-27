@@ -20,6 +20,6 @@ jobs:
         env:
          GITHUB_CONTEXT: ${{ toJson(github.event.client_payload) }}
          GITHUB_CONTEXT2: ${{ toJson(github.event.client_payload.archive_name) }}
-         GITHUB_CONTEXT3: ${{ vars.src }}
+         GITHUB_CONTEXT3: ${{ vars.dst }}
         
         run: python main.py -user ${{vars.user}} -token  ${{vars.token}} -src $GITHUB_CONTEXT3 -dst ${{vars.dst}}
