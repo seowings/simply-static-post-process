@@ -21,7 +21,7 @@ jobs:
          GITHUB_CONTEXT: ${{ toJson(github.event.client_payload) }}
          GITHUB_CONTEXT2: ${{ toJson(github.event.client_payload.archive_name) }}
         
-        run: python src/main.py ${{vars.MYVAR}} ${{vars.PASSWORD}}
+        run: python src/main.py ${{vars.user}} ${{vars.token}} ${{vars.src}} ${{vars.dst}}
 
       - name: Deploy Website/Documents
         uses: peaceiris/actions-gh-pages@v3
