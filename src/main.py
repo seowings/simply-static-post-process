@@ -34,20 +34,13 @@ SOFTWARE.
 
 import os
 import sys
-import argparse
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(
-                    prog='ProgramName',
-                    description='What the program does',
-                    epilog='Text at the bottom of help')
 
-    parser.add_argument('-user')
-    parser.add_argument('-token')
-    parser.add_argument('-src', default=None)
-    parser.add_argument('-dst')
+
+    print ("==========================")
+    print(sys.argv[1:])
     
-    args = parser.parse_args()
-    print(args.user, args.token, args.src, args.dst)
+    print ("==========================")
 
