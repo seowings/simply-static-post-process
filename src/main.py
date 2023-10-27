@@ -37,8 +37,7 @@ import os
 if __name__ == "__main__":
 
     print ("==========================")
-    print (os.getenv("MY_VAR"))
+    print(sys.argv[1:])
     
-    print(os.environ.get('MY_VAR'))
     print ("==========================")
 
