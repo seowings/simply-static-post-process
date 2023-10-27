@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     parser.add_argument('-user')
     parser.add_argument('-token')
-    parser.add_argument('-src, default=None)
+    parser.add_argument('-src', default=None)
     parser.add_argument('-dst')
     
     args = parser.parse_args()
