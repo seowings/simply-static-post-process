@@ -22,4 +22,4 @@ jobs:
          GITHUB_CONTEXT2: ${{ toJson(github.event.client_payload.archive_name) }}
          myvar: ${{ vars.src }}
         
-        run: python main.py -user ${{vars.user}} -token  ${{vars.token}} -src $myvar -dst ${{vars.dst}}
+        run: python main.py -user ${{vars.user}} -token  ${{vars.token}} -src ${{myvar}} -dst ${{vars.dst}}
