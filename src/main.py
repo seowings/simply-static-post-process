@@ -41,14 +41,14 @@ if __name__ == "__main__":
 
     print ("==========================")
     
-    arg = sys.argv[1:]
+    args = sys.argv[1:]
     
-    print(arg)
+    print(args)
     all_items = sum([arg.split(':') for arg in args], []) 
     
     ab = dict(zip(all_items[0:-1:2], all_items[1::2]))
 
     print (ab)
-    
+
     print ("==========================")
 
